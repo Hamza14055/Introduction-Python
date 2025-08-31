@@ -1,7 +1,7 @@
 class A:
     def __init__(self,a):
         self.a = a 
-    def __it__(self,other):
+    def __lt__(self,other):
         if(self.a < other.a):
             return("Obj1 is lesser than Obj2")
         else :
