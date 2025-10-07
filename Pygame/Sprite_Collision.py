@@ -49,7 +49,7 @@ while running:
     screen.blit(background_image,(0,0))
     all_sprites.draw(screen)
     if won:
-     win_text = font.render("You win!!", True, pygame.Color('black'))
+     win_text = font.render("You win!!", True, pygame.Color('Blue'))
      screen.blit(
         win_text,
         ((SCREEN_WIDTH - win_text.get_width()) // 2,
