@@ -1,0 +1,9 @@
+import pygame
+pygame.init()
+SCREEN_WIDTH = 300
+SCREEN_HEIGHT = 300
+class Sprite(pygame.sprite.Sprite):
+    sprite_width = 30
+    sprite_height = 20
+    
+    
