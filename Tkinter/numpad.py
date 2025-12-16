@@ -10,5 +10,5 @@ for i in range(4):
          frame = Frame(master=root,relief=SUNKEN,borderwidth=1)
          frame.grid(row=i,column=j,stick="nsew",padx=5,pady=5)
          label = Label(master = frame,text = nums[i][j],bg='#d0efff')
-         label.pack(padx=10,pady=10)
+         label.pack(padx=10 ,pady=10)
 root.mainloop()
