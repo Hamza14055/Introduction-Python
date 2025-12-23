@@ -17,7 +17,7 @@ def open_file():
         input_file.close()
     window.title(f"Hamza's Code editor-{file_path}")
 def save_file():
-    file_path = asksaveasfilename(defaultextension="txt",filetypes=[("Text Files","*.txt",)("All Files","*.*")])
+    file_path = asksaveasfilename(defaultextension=".txt",filetypes=[("Text Files","*.txt"),("All Files","*.*")])
     if not file_path:
         return 
     with open(file_path,"w") as output_file:
@@ -26,8 +26,8 @@ def save_file():
     window.title(f"Hamza's Text Editor-{file_path}")
 txt_edit=Text(window)
 fr_buttons=Frame(window,relief=RAISED,bd=2)
-btn_open=Button(fr_buttons,Text="Open",command=open_file)
-btn_save=Button(fr_buttons,Text="Save as......",command=save_file)
+btn_open=Button(fr_buttons,text="Open",command=open_file)
+btn_save=Button(fr_buttons,text="Save as......",command=save_file)
 btn_open.grid(row=0,column=0,sticky="ew",padx=5,pady=5)
 btn_save.grid(row=1,column=0,sticky="ew",padx=5)
 fr_buttons.grid(row=0,column=0,sticky = "ns")
